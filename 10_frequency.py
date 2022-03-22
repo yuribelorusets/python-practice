@@ -19,6 +19,6 @@ def frequency(lst, search_term):
     # return count
 
 
-    count = len([num for num in lst if num == search_term])
+    # count = len([num for num in lst if num == search_term])
 
-    return count
+    return lst.count(search_term)

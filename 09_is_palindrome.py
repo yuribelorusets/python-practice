@@ -1,3 +1,6 @@
+from hashlib import new
+
+
 def is_palindrome(phrase):
     """Is phrase a palindrome?
 
@@ -22,6 +25,6 @@ def is_palindrome(phrase):
         True
     """
 
-    if phrase.lower().replace(" ", "") == phrase.lower().replace(" ", "")[::-1]:
-        return True
-    return False
+    new_phrase = phrase.lower().replace(" ", "")
+    return new_phrase == new_phrase[::-1]
+     

@@ -13,4 +13,6 @@ def single_letter_count(word, letter):
 
     count = len([char for char in word.lower() if char == letter])
 
+
+    # return word.lower().count(letter.lower())
     return count

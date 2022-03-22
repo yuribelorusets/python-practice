@@ -11,3 +11,8 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
+    # select the substring of characters in phrase that match toswap
+    # swapcase on substring
+
+    return phrase.split("").replace(to_swap.lower(), to_swap.swapcase()).join("")
+

@@ -12,8 +12,9 @@ def multiple_letter_count(phrase):
     count = {}
 
     for char in phrase:
-        if char in count:
-            count[char] += 1
-        else:
-            count[char] = 1
+        count[char] = count.get(char, 0) + 1
+        # if char in count:
+        #     count[char] += 1
+        # else:
+        #     count[char] = 1
     return count

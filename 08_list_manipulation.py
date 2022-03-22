@@ -59,6 +59,11 @@ def list_manipulation(lst, command, location, value=None):
     if location != 'beginning':
         if location != 'end':
             return None
+    
+    # VALID_COMMANDS = 
+    # VALID_LOCATIONS =
+
+    # if command not in VALID_COMMANDS and ....
 
     if command == 'add':
         if location == 'beginning':
@@ -72,4 +77,4 @@ def list_manipulation(lst, command, location, value=None):
         if location == 'beginning':
             return lst.pop(0)
         elif location == 'end':
-            return lst.pop(-1)
+            return lst.pop()
