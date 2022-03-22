@@ -14,5 +14,12 @@ def flip_case(phrase, to_swap):
     # select the substring of characters in phrase that match toswap
     # swapcase on substring
 
-    return phrase.split("").replace(to_swap.lower(), to_swap.swapcase()).join("")
+    word = []
+
+    for letter in phrase:
+        if letter.lower() == to_swap.lower():
+            word.append(letter.swapcase())
+        else:
+            word.append(letter)
+    return ''.join(word)
 
